@@ -23,7 +23,7 @@ The following are the email verification workflows provided by LoginRadius:
   ![Email Verification Workflow - Disable](https://apidocs.lrcontent.com/images/Email-Verification-Workflow---Disable_1601462860114264e80.75344052.png "Email Verification Workflow - Disable")
 
 > **Note:**
->
+>   
 > - You can choose to enable only **one** of the email verification workflows i.e. Mandatory, Optional, or No email verification.
 > - The current email verification flow enabled for your account is displayed by the disabled dropdown field under the [Email Workflow](https://adminconsole.loginradius.com/platform-configuration/identity-workflow/verification-workflow/email-workflow) section of the Admin Console. To change the email verification workflow for your account, you can raise a request to the [LoginRadius Support Team](https://adminconsole.loginradius.com/support/tickets/open-a-new-ticket).
 
@@ -48,6 +48,8 @@ The following are the email verification workflows provided by LoginRadius:
 ### Mandatory to No email verification
 
 **We have Mandatory email verification enabled, we would like to know the impact of enabling "no email verification":** On enabling the No Email Verification flow, users will not receive the verification email, and they can directly login to your site without verifying their email. The users created before enabling this flow and having an un-verified email address will not have any issue in login.
+
+> **Note:** The **Multi-Factor Authentication (MFA)** feature will not be visible in the Admin Console in the case when the email verification from is changed from **Mandatory** to either **Optional** or **No Email Verification** flow.
 
 ### Optional to Mandatory email verification
 
