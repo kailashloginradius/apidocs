@@ -3,9 +3,9 @@ $protocal = isset($_SERVER['REQUEST_SCHEME']) && !empty($_SERVER['REQUEST_SCHEME
 $domain = isset($_SERVER['HTTP_HOST']) && !empty($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
 $path = isset($_SERVER['SCRIPT_NAME']) && !empty($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME'] : '';
 $searchandreplace = array(
-    //'lr-apidocs-dev.azurewebsites.net'=>'www2.loginradius.org/docs',
-    //'lr-apidocs.azurewebsites.net'=>'www.loginradius.com/docs'
-    'lr-apidocs.azurewebsites.net'=>'docs.loginradius.com'
+    //'lrapidocs-dev.azurewebsites.net'=>'www2.loginradius.org/docs',
+    //'lrapidocs.azurewebsites.net'=>'www.loginradius.com/docs'
+    'lrapidocs.azurewebsites.net'=>'docs.loginradius.com'
 );
 $domain = str_replace(array_keys($searchandreplace), array_values($searchandreplace), $domain);
 //$domain = 'docs.loginradius.org/docs';
